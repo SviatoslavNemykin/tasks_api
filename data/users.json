@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "name": "Sviatoslav",
+    "email": "Sviatoslav@gmail.com",
+    "password": "bebebeb",
+    "createdAt": "today"
+  },
+  {
+    "id": 2,
+    "name": "Vadim",
+    "email": "Vadim@gmail.com",
+    "password": "bebebeb2",
+    "createdAt": "today"
+  },
+  {
+    "id": 3,
+    "name": "Lena",
+    "email": "Lena@gmail.com",
+    "password": "bebebeblalal",
+    "createdAt": "today"
+  },
+  {
+    "id": 4,
+    "name": "Vawwdim",
+    "email": "Vawwdim@gmail.com",
+    "password": "bebebeb2"
+  },
+  {
+    "id": 5,
+    "name": "Vadim",
+    "email": "Vadim@gmail.com",
+    "password": "bebebeb2"
+  }
+]
