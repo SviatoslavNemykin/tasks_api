@@ -10,6 +10,11 @@ export function createUserRepository(): UserRepository{
             const fileData = await fs.readFile('data/users.json', 'utf8');
             const jsonArray: User[] = JSON.parse(fileData);
             
+            const isEmailTaken = jsonArray.some((user) => user.email === userData.email);
+            if (isEmailTaken) {
+                return undefined;
+            }
+
             const newUser: User = {
                 ...userData,
                 id: jsonArray.length + 1,

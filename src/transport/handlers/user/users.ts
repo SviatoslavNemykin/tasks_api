@@ -34,6 +34,11 @@ export function createUserHandler(userServices: UserServices): UserHandler{
             }
             try{
                 const user = await userServices.createUser({id: 0, name, email, password, createdAt})
+                if(!user){
+                    return res.status(400).json({
+                        message: "email already exists"
+                    })
+                }
                 return res.status(201).json(user)
             } catch(error){
                 return res.status(400).json({

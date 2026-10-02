@@ -31,5 +31,11 @@
     "name": "Vadim",
     "email": "Vadim@gmail.com",
     "password": "bebebeb2"
+  },
+  {
+    "id": 6,
+    "name": "Vadim",
+    "email": "Vadim@gamail.com",
+    "password": "bebebeb2"
   }
 ]

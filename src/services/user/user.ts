@@ -5,7 +5,12 @@ import type { UserServices } from "./user.types.js";
 export function createUserServices(userRepository: UserRepository): UserServices {
     return {
         async createUser(user){
-            return await userRepository.createUser(user)
+            
+            const createUser = await userRepository.createUser(user)
+            if(createUser === undefined){
+                return undefined
+            }
+            return createUser
         },
         async getUserById(id){
             const user = await userRepository.getUserById(id)
