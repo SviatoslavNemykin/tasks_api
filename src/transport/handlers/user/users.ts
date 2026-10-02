@@ -77,7 +77,7 @@ export function createUserHandler(userServices: UserServices): UserHandler{
                         message: "incorrect data"
                     })
                 }
-                return res.status(201).json(user)
+                return res.status(200).json(user)
             } catch(error){
                 return res.status(400).json({
                     message: "incorrect data"
