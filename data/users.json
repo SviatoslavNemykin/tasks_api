@@ -37,5 +37,19 @@
     "name": "Vadim",
     "email": "Vadim@gamail.com",
     "password": "bebebeb2"
+  },
+  {
+    "id": 7,
+    "name": "Sviatosssasalav",
+    "email": "Sviasdasdastoslav@gmail.com",
+    "password": "bebebeb",
+    "createdAt": "2026-10-02T17:49:51.611Z"
+  },
+  {
+    "id": 8,
+    "name": "Sviatoslav",
+    "email": "Sviatoaslav@gmail.com",
+    "password": "bebebeb",
+    "createdAt": "2026-10-02T17:50:08.483Z"
   }
 ]
