@@ -14,24 +14,19 @@ import { createTaskRouters } from "./transport/routers/tasks/tasks.js";
 const app = express();
 app.use(express.json());
 
-// 1. Repositories
 const userRepository = createUserRepository();
 const taskRepository = createTaskRepository();
 
-// 2. Services (Dependency Injection)
 const userServices = createUserServices(userRepository);
 const taskServices = createTaskServices(taskRepository, userRepository); // передаємо userRepository для валідації
 
-// 3. Handlers
 const userHandlers = createUserHandler(userServices);
 const taskHandlers = createTaskHandler(taskServices);
 
-// 4. Routers
 const userRouter = createUserRouters(userHandlers);
 const authRouter = createAuthRouters(userHandlers);
 const taskRouter = createTaskRouters(taskHandlers);
 
-// 5. Connect to App
 app.use('/users', userRouter);
 app.use('/auth', authRouter);
 app.use('/tasks', taskRouter);
