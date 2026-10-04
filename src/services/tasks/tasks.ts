@@ -16,7 +16,7 @@ export function createTaskServices(taskRepository: TaskRepository, userRepositor
         async createTask(data) {
             const user = await userRepository.getUserById(data.userId);
             if (!user) {
-                return null; // Користувача не знайдено
+                return null;
             }
 
             const tasks = await taskRepository.getAll();
